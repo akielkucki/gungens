@@ -17,7 +17,7 @@ const Footer = () => {
                             The premier Minecraft gaming experience with custom gameplay, active community, and regular updates.
                         </p>
                         <div className="flex space-x-4 mt-6">
-                            {['Discord', 'Twitter', 'YouTube', 'Twitch'].map((social, index) => (
+                            {['Discord'].map((social, index) => (
                                 <motion.a
                                     key={index}
                                     href="#"
