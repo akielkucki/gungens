@@ -218,7 +218,7 @@ const ContactFormPopup = ({ isOpen, onClose }: { isOpen: boolean, onClose: () =>
                                             </div>
                                             <h4 className="text-xl font-light mb-2">Message Sent!</h4>
                                             <p className="text-gray-400 font-thin">
-                                                Thank you for reaching out. We'll get back to you soon.
+                                                Thank you for reaching out. We&#39;ll get back to you soon.
                                             </p>
                                         </motion.div>
                                     ) : (

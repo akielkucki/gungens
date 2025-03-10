@@ -11,7 +11,6 @@ interface ServerStatusProps {
 
 const ServerStatus: React.FC<ServerStatusProps> = ({
                                                        className = '',
-                                                       serverAddress = 'play.gungens.com',
                                                    }) => {
     const [isOnline, setIsOnline] = useState(true);
     const [playerCount, setPlayerCount] = useState(1024);

@@ -5,7 +5,6 @@ import GameplaySection from "@/src/components/GameplaySection";
 import CommunitySection from "@/src/components/CommunitySection";
 import FAQSection from "@/src/components/FAQSection";
 import Footer from "@/src/components/Footer";
-import Toast from "@/src/components/ui/Toast";
 import OwnershipNotification from "@/src/components/OwnershipNotification";
 
 
