@@ -15,7 +15,7 @@ const OwnershipNotification = () => {
     }
     return (
         <Toast
-            message="GunGens is looking for new ownership. Interested? Contact us for details."
+            message="GunGens has found new ownership, server is coming soon!"
             actionLabel="Learn More"
             onActionClick={() => showContactSection()}
             position="bottom-center"

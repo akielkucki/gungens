@@ -7,7 +7,7 @@ import Image from 'next/image';
 const HeroSection = () => {
     // Countdown timer state
     const [timeLeft, setTimeLeft] = useState({
-        days: 0,
+        days: 30,
         hours: 0,
         minutes: 0,
         seconds: 0
@@ -19,8 +19,8 @@ const HeroSection = () => {
 
     // Set launch date - example: 1 year from now
     useEffect(() => {
-        const launchDate = new Date();
-        launchDate.setDate(launchDate.getDate() + 365);
+        const launchDate = new Date("2025-04-14T10:00:00Z");
+        launchDate.setDate(launchDate.getDate());
 
         const timer = setInterval(() => {
             const now = new Date();
@@ -112,17 +112,7 @@ const HeroSection = () => {
             <span className="text-xs uppercase mt-1 text-gray-400 font-thin">{label}</span>
         </div>
     );
-    const [socialHover, setSocialHover] = useState<boolean>(false);
-    const listSocialName = (social: string): string[] | null => {
-        if (socialHover) {
-            switch (social.toLowerCase()) {
-                case 'd':
-                    return 'iscord'.split("")
-            }
 
-        }
-        return null;
-    }
     return (
         <section className="hero-pattern min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black via-transparent to-black opacity-50"></div>
@@ -206,26 +196,18 @@ const HeroSection = () => {
                                 LEARN MORE
                             </motion.a>
                             <div className="flex space-x-3">
-                                {[{icon: 'D', url: 'https://discord.gg/4tXw47GwPT'}].map((social, index) => (
+                                {[{icon: '/discord.svg', url: 'https://discord.gg/R9PtvYunDW'}].map((social, index) => (
                                     <motion.a
                                         key={index}
                                         href="#"
                                         className="w-10 h-10 rounded-full border gold-border flex items-center justify-center text-gray-300 hover:text-gold transition-colors"
                                         whileHover={{ y: -3, width: "150px" }}
                                         transition={{ duration: 0.5 }}
-                                        onMouseOver={() => setSocialHover(true)}
-                                        onMouseOut={() => setSocialHover(false)}
                                         onClick={() => {window.open(social.url, '_blank')}}
                                     >
                                         <span
 
-                                        >{social.icon}{listSocialName(social.icon)?.map((val,index) => {
-                                            return (
-                                                <motion.span key={index} initial={{ opacity: 0  }} animate={{ opacity: 1 }} transition={{ duration: 0.55*index }}>
-                                                    {val}
-                                                </motion.span>
-                                            )
-                                        })}</span>
+                                        ><Image src={social.icon} alt={"Social"} width={24} height={24}/></span>
                                     </motion.a>
                                 ))}
                             </div>

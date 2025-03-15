@@ -8,10 +8,10 @@ const CommunitySection = () => {
     const isInView = useInView(ref, { once: true, margin: "-100px" });
 
     const socialLinks = [
-        { name: "Discord", icon: "🎮", members: "25K+" },
-        { name: "Twitter", icon: "🐦", followers: "10K+" },
-        { name: "YouTube", icon: "▶️", subscribers: "50K+" },
-        { name: "Twitch", icon: "📺", followers: "15K+" }
+        { name: "Discord", icon: "🎮", members: "10+" },
+        { name: "Twitter", icon: "🐦", followers: "NONE" },
+        { name: "YouTube", icon: "▶️", subscribers: "NONE" },
+        { name: "Twitch", icon: "📺", followers: "NONE" }
     ];
 
     return (
@@ -69,9 +69,9 @@ const CommunitySection = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {[
-                            { day: "SATURDAY", event: "PVP Tournament", time: "8 PM EST" },
-                            { day: "WEDNESDAY", event: "Boss Raids", time: "9 PM EST" },
-                            { day: "SUNDAY", event: "Building Contest", time: "7 PM EST" }
+                            { day: "SATURDAY", event: "Server Planning Phase", time: "ALL DAY" },
+                            { day: "WEDNESDAY", event: "Map Construction", time: "ALL DAY" },
+                            { day: "SUNDAY", event: "Plugin Setup and configuration", time: "ALL DAY" }
                         ].map((event, index) => (
                             <motion.div
                                 key={index}

@@ -17,22 +17,22 @@ const features = [
     {
         icon: "💰",
         title: "Economy System",
-        description: "Build your wealth through trading, missions, and resource gathering in our player-driven economy."
+        description: "Build your wealth through custom marketplaces, missions, and resource gathering in our player-driven economy."
     },
     {
         icon: "🛡️",
-        title: "Factions",
-        description: "Join forces with allies to control territory, raid rivals, and dominate the server landscape."
+        title: "Clans",
+        description: "Team up with your fellow players and conquer the lands!"
     },
     {
-        icon: "🎭",
-        title: "Custom Classes",
+        icon: "🏝",
+        title: "Levels",
         description: "Choose from specialized roles with unique abilities and progression paths."
     },
     {
         icon: "🎮",
-        title: "Mini Games",
-        description: "Enjoy countless hours of entertainment with our collection of exclusive mini-games."
+        title: "Infinite Rewards",
+        description: "Enjoy countless opportunities for rewards from our shop just for playing! Bonus points if you refer your friends too!"
     }
 ];
 
